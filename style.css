@@ -53,6 +53,7 @@ nav {
   padding: 1rem;
   align-items: center;
   min-height: 10vh;
+  background: #71b280;
   background: linear-gradient(to right, #71b280, #134e5e);
   background-clip: text;
   -webkit-text-fill-color: transparent;
