@@ -42,15 +42,20 @@ a {
   background: #131c27;
   color: white;
 }
+
+/* NAV BAR */
 nav {
   /* Parent of below 2 childs and is flex*/
   display: flex;
   flex-wrap: wrap;
   width: 90%;
   margin: auto;
-  padding: 2rem;
+  padding: 1rem;
   align-items: center;
   min-height: 10vh;
+  background: linear-gradient(to right, #71b280, #134e5e);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 nav ul {
@@ -66,9 +71,10 @@ nav ul {
   font-family: "Pattaya", sans-serif;
 }
 
+/* HERO SECTION */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
-    url("./img/landing-page.jpg");
+    url("./img/hero.jpg");
   min-height: 90vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -80,21 +86,261 @@ nav ul {
   justify-content: center;
   text-align: center;
 }
+.hero h2 {
+  background: linear-gradient(to left, #0e5366, #438352);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .hero h3 {
   padding: 4rem;
 }
 
-.hero button {
-  background: #4c6e97;
+button {
+  background: #134e5e;
+  background: -webkit-linear-gradient(to right, #71b280, #134e5e);
+  background: linear-gradient(to right, #71b280, #134e5e);
+
   border: none;
   border-radius: 2rem;
   color: white;
-  padding: 2rem 10rem;
+  padding: 2rem 8rem;
   font-size: 2.4rem;
   cursor: pointer;
+  /* animation: buttonAnimation 2s infinite alternate 2s; */
+  transition: all 0.5s ease-in-out; /*To animate button tansition 
+  We can transition more items by keeping it from background to all*/
+}
+button:hover {
+  background: #134e5e;
+  background: -webkit-linear-gradient(to right, #0e5366, #438352);
+  background: linear-gradient(to right, #0e5366, #438352);
+  padding: 2rem 10rem;
 }
 
+/* Button Animation Not using bcz of gradient*/
+
+@keyframes buttonAnimation {
+  0% {
+    background: #466fa0;
+  }
+  25% {
+    background: #1d5ead;
+  }
+  100% {
+    background: #0a4081;
+  }
+}
+/* LOCATIONS SECTION */
+#locations {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("./img/new-york-page.png");
+  background-position: center;
+  background-position: center;
+  color: black;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden; /* HIdes cloud going out of section*/
+}
+
+.locations-head {
+  width: 90%;
+  margin: auto;
+}
+
+.locations-head h2 {
+  padding: 1rem 0;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
+}
+.locations-head h3 {
+  padding: 4rem 0;
+  background: linear-gradient(#131c27, #663b34);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cloud {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.moving-cloud-1 {
+  animation: cloudAnimation 3s infinite alternate ease-in-out;
+}
+.moving-cloud-2 {
+  top: 20%;
+  z-index: -1;
+  opacity: 0.5;
+  animation: cloudAnimation 3.5s infinite alternate ease-in-out;
+}
+/* Cloud Animation */
+
+@keyframes cloudAnimation {
+  from {
+    transform: translate(10%, -10%);
+  }
+  to {
+    transform: translate(0%, 0%); /*back at origin */
+  }
+}
+
+/* BENEFITS SECTION */
+
+.benefits-head {
+  background: #134e5e;
+  background: -webkit-linear-gradient(to right, #71b280, #134e5e);
+  background: linear-gradient(to right, #71b280, #134e5e);
+  padding: 3rem;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.benefits-head h3 {
+  padding: 1rem;
+}
+
+.cards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 70vh;
+}
+
+.card {
+  text-align: center;
+  flex: 1 1 25rem;
+  min-height: 40vh;
+  margin: 2rem 5rem;
+  transition: 1s;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h4,
+.card p {
+  padding: 1rem;
+}
+
+.card img {
+  max-width: 15%;
+  margin: 2rem;
+}
+.card:hover {
+  min-height: 45vh;
+  background: #134e5e;
+  background: -webkit-linear-gradient(to right, #71b280, #134e5e);
+  background: linear-gradient(to right, #71b280, #134e5e);
+  color: white;
+}
+
+.card-icon {
+  background: #134e5e;
+  background: -webkit-linear-gradient(to right, #71b280, #134e5e);
+  background: linear-gradient(to right, #71b280, #134e5e);
+}
+
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(./img/contact-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper {
+  background: rgba(19, 28, 39, 0.7);
+  width: 60%;
+  color: white;
+  border-radius: 2rem;
+}
+.form-head {
+  text-align: center;
+  padding: 4rem;
+}
+.name-form,
+.email-form {
+  padding: 3rem;
+  text-align: center;
+}
+
+.form-wrapper label {
+  margin: 0rem 3rem;
+}
+
+.form-wrapper input {
+  padding: 1rem 3rem;
+}
+
+.form-wrapper button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+  background: #134e5e;
+  background: -webkit-linear-gradient(to right, #71b280, #134e5e);
+  background: linear-gradient(to right, #71b280, #134e5e);
+
+  border-top-right-radius: 0%;
+  border-top-left-radius: 0%;
+}
+
+.form-wrapper button:hover {
+  background: #134e5e;
+  background: -webkit-linear-gradient(to right, #549663, #0a4150);
+  background: linear-gradient(to right, #549663, #0a4150);
+}
+
+/* FOOTER SECTION */
+
+footer {
+  color: white;
+  background: #134e5e;
+  background: -webkit-linear-gradient(to right, #71b280, #134e5e);
+  background: linear-gradient(to right, #71b280, #134e5e);
+}
+
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  margin: auto;
+  width: 90%;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+
+footer h5 {
+  flex: 10 1 40rem;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer li {
+  transition: 0.5s;
+}
+footer li:hover {
+  transform: translateY(-1rem);
+}
+
+/* MEDIA QUERY */
 @media screen and (max-width: 950px) {
   html {
     font-size: 45%;
@@ -104,5 +350,27 @@ nav ul {
   }
   #logo {
     padding: 1rem;
+  }
+  .cloud {
+    height: 50%;
+    pointer-events: none; /*Makes the cloud image unselctable 
+    and the text selectable*/
+  }
+  .moving-cloud-1 {
+    z-index: -1;
+    animation: cloudAnimation 3s infinite alternate;
+  }
+  .moving-cloud-2 {
+    z-index: -2;
+    animation: cloudAnimation 3s infinite alternate;
+  }
+  footer {
+    text-align: center;
+  }
+  .form-wrapper {
+    width: 100%;
+  }
+  footer h5 {
+    padding-bottom: 3rem;
   }
 }
