@@ -74,7 +74,7 @@ nav ul {
 
 /* HERO SECTION */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
     url("./img/hero.jpg");
   min-height: 90vh;
   background-size: cover;
@@ -88,7 +88,8 @@ nav ul {
   text-align: center;
 }
 .hero h2 {
-  color: #71b280;
+  color: white;
+
   /* background: linear-gradient(to left, #0e5366, #438352);
   background-clip: text;
   -webkit-text-fill-color: transparent; */
@@ -310,6 +311,7 @@ button:hover {
 
 footer {
   color: white;
+
   background: #134e5e;
   background: -webkit-linear-gradient(to right, #71b280, #134e5e);
   background: linear-gradient(to right, #71b280, #134e5e);
@@ -327,6 +329,7 @@ footer {
 
 footer h5 {
   flex: 10 1 40rem;
+  font-family: "Pattaya", sans-serif;
 }
 
 footer ul {

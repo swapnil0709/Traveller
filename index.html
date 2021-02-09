@@ -21,116 +21,142 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Traveller | Travelling Agency</title>
   </head>
+
   <body>
-    <!-- Nav Bar -->
-    <header class="main-head">
-      <nav>
-        <h1 id="logo">Traveller</h1>
-        <ul>
-          <li><a href="#locations">Locations</a></li>
-          <li><a href="#benefits">Benefits</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- Hero Section -->
-    <section class="hero">
-      <h2>Travel Beyond Limits</h2>
-      <h3>
-        Start your travel at an affordable price with Traveller. <br />
-        Travel in over 50 cities with one click.
-      </h3>
-      <button>Book Now</button>
-    </section>
-    <!-- Locations Section -->
-
-    <section id="locations">
-      <header class="locations-head">
-        <h2>The Perfect Travelling Experience</h2>
-        <h3>
-          We cover everything from picking the perfect hotel, <br />
-          filght & Vacation spot.
-        </h3>
-        <img src="./img/cloud.png" class="moving-cloud-1 cloud" alt="" />
-        <img src="./img/cloud.png" class="moving-cloud-2 cloud" alt="" />
+    <main>
+      <!-- Nav Bar -->
+      <header class="main-head">
+        <nav>
+          <h1 id="logo">Traveller</h1>
+          <ul>
+            <li><a href="#locations">Locations</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </header>
-    </section>
-
-    <!-- Benefits Section -->
-    <section id="benefits">
-      <header class="benefits-head">
-        <h2>The Perfect Travelling Experience</h2>
+      <!-- Hero Section -->
+      <section class="hero">
+        <h2>Travel Beyond Limits</h2>
         <h3>
-          We cover everything from picking you the perfect hotel, <br />
-          flight and travelling destination.
+          Start your travel at an affordable price with Traveller. <br />
+          Travel in over 50 cities with one click.
         </h3>
-      </header>
-      <div class="cards">
-        <div class="card">
-          <div class="card-icon">
-            <img src="./icons/route-solid.svg" alt="" />
-          </div>
-          <h4>Travel</h4>
-          <p>
-            Travel in over 250 countries with no effort. 
-            <p>Travel guides for your
-              care. </p>
-            <p>Transport Service Included in Package</p> 
-          </p>
-        </div>
-        <div class="card">
-          <div class="card-icon">
-            <img src="./icons/bed-solid.svg" alt="" />
-          </div>
-          <h4>Hotel</h4>
-          <p>Hotels located near popular areas.</p>
-          <p>We cover the premium hotels for best comfort</p>
-          <p>Complimentary Breakfast</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">
-            <img src="./icons/plane-departure-solid.svg" alt="" />
-          </div>
-          <h4>Fly</h4>
-          <p>Flight included in every purchase trip</p>
-          <p>Select from a List of 20 flights</p>
-          <p>Fly with joy</p>
-        </div>
-      </div>
-    </section>
+        <button>Book Now</button>
+      </section>
+      <!-- Locations Section -->
 
-    <!-- CONTACT SECTION -->
-    <section id="contact">
-      <div class="form-wrapper">
-        <header class="form-head">
-          <h2>Contact Us</h2>
+      <section id="locations">
+        <header class="locations-head">
+          <h2>The Perfect Travelling Experience</h2>
+          <h3>
+            We cover everything from picking the perfect hotel, <br />
+            filght & Vacation spot.
+          </h3>
+          <img src="./img/cloud.png" class="moving-cloud-1 cloud" alt="" />
+          <img src="./img/cloud.png" class="moving-cloud-2 cloud" alt="" />
         </header>
-        <form action="">
-          <div class="name-form">
-            <label for="name">Name:</label>
-            <input type="text" name="name" required />
+      </section>
+
+      <!-- Benefits Section -->
+      <section id="benefits">
+        <header class="benefits-head">
+          <h2>The Perfect Travelling Experience</h2>
+          <h3>
+            We cover everything from picking you the perfect hotel, <br />
+            flight and travelling destination.
+          </h3>
+        </header>
+        <div class="cards">
+          <div class="card">
+            <div class="card-icon">
+              <img src="./icons/route-solid.svg" alt="" />
+            </div>
+            <h4>Travel</h4>
+            <p>Travel in over 250 countries with no effort.</p>
+            <p>Travel guides for your care.</p>
+            <p>Transport Service Included in Package</p>
           </div>
-          <div class="email-form">
-            <label for="email">Email: </label>
-            <input type="email" required />
+          <div class="card">
+            <div class="card-icon">
+              <img src="./icons/bed-solid.svg" alt="" />
+            </div>
+            <h4>Hotel</h4>
+            <p>Hotels located near popular areas.</p>
+            <p>We cover the premium hotels for best comfort</p>
+            <p>Complimentary Breakfast</p>
           </div>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-    </section>
+          <div class="card">
+            <div class="card-icon">
+              <img src="./icons/plane-departure-solid.svg" alt="" />
+            </div>
+            <h4>Fly</h4>
+            <p>Flight included in every purchase trip</p>
+            <p>Select from a List of 20 flights</p>
+            <p>Fly with joy</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact">
+        <div class="form-wrapper">
+          <header class="form-head">
+            <h2>Contact Us</h2>
+          </header>
+          <form action="">
+            <div class="name-form">
+              <label for="name">Name:</label>
+              <input
+                id="name"
+                type="text"
+                name="name"
+                required
+                placeholder="Enter Name"
+              />
+            </div>
+            <div class="email-form">
+              <label for="email">Email: </label>
+              <input
+                id="email"
+                type="email"
+                required
+                placeholder="Enter Email"
+              />
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
 
     <footer>
       <div class="footer-wrapper">
         <h5>Traveller &copy;</h5>
         <ul>
           <li>
-            <a href="#"> <img src="./icons/twitter.svg" alt="" /></a>
+            <a href="#">
+              <img
+                src="./icons/twitter.svg"
+                alt="twitter-link"
+                title="twitter-link"
+            /></a>
           </li>
           <li>
-            <a href="#"> <img src="./icons/youtube.svg" alt="" /></a>
+            <a href="#">
+              <img
+                src="./icons/youtube.svg"
+                alt="youtube-link"
+                title="youtube-link"
+            /></a>
           </li>
           <li>
-            <a href="#"> <img src="./icons/instagram.svg" alt="" /></a>
+            <a href="#">
+              <img
+                src="./icons/instagram.svg"
+                alt="Instagram-link"
+                title="Instagram-link"
+            /></a>
           </li>
         </ul>
       </div>
